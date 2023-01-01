@@ -15,8 +15,8 @@ class KategoriController extends Controller
     public function simpan(Request $request)
     {
         $kategori = new kategori();
-        $kategori->nama = $request->get("nama");
-        $kategori->keterangan = $request->get("keterangan");
+        $kategori->nama_kategori = $request->get("nama_kategori");
+        $kategori->minuman_id = $request->get("minuman_id");
         $kategori->save();
 
         return redirect(route("tampil_kategori", ['id' => $kategori->id]));
@@ -43,8 +43,8 @@ class KategoriController extends Controller
     public function update(Request $request, $id)
     {
         $kategori = kategori::find($id);
-        $kategori->nama = $request->get("nama");
-        $kategori->keterangan = $request->get("keterangan");
+        $kategori->nama_kategori = $request->get("nama_kategori");
+        $kategori->minuman_id = $request->get("minuman_id");
         $kategori->save();
 
         return redirect(route("tampil_kategori", ['id' => $kategori->id]));

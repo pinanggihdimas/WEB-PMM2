@@ -4,7 +4,7 @@
 
 <table class="table">
 
-<a href="{{ route("user_input") }}" >Add User</a>
+<a href="{{ route("user_input") }}" ><button type="submit" class="btn btn-secondary">Add User</button></a><br><br>
     <thead>
         <tr>
             <th scope="col">ID</th>

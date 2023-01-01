@@ -15,11 +15,10 @@ return new class extends Migration
     {
         Schema::create('cetak', function (Blueprint $table) {
             $table->id();
-            $table->string("cetak_id");
             $table->string("tanggal");
             $table->string("minuman");
             $table->string("nama");
-            $table->string("total_harga");
+            $table->string("qty");
             $table->timestamps();
         });
     }

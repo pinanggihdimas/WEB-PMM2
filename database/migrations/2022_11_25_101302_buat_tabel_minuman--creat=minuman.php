@@ -15,10 +15,9 @@ return new class extends Migration
     {
         Schema::create('minuman', function (Blueprint $table) {
             $table->id();
-            $table->string("minuman_id");
-            $table->string("barista_id");
-            $table->string("kategori_id");
-            $table->string("minuman");
+            $table->string("nama");
+            $table->string("nama_kategori");
+            $table->string("id_kategori");
             $table->string("gambar");
             $table->string("deskripsi");
             $table->string("harga");

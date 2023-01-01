@@ -15,8 +15,10 @@ class BaristaController extends Controller
     public function simpan(Request $request)
     {
         $barista = new barista();
-        $barista->nama = $request->get("nama");
-        $barista->keterangan = $request->get("keterangan");
+        $barista->nama_barista = $request->get("nama_barista");
+        $barista->jenis_kelamin = $request->get("jenis_kelamin");
+        $barista->notlp = $request->get("notlp");
+        $barista->email = $request->get("email");
         $barista->save();
 
         return redirect(route("tampil_barista", ['id' => $barista->id]));
@@ -43,8 +45,10 @@ class BaristaController extends Controller
     public function update(Request $request, $id)
     {
         $barista = barista::find($id);
-        $barista->nama = $request->get("nama");
-        $barista->keterangan = $request->get("keterangan");
+        $barista->nama_barista = $request->get("nama_barista");
+        $barista->jenis_kelamin = $request->get("jenis_kelamin");
+        $barista->notlp = $request->get("notlp");
+        $barista->email = $request->get("email");
         $barista->save();
 
         return redirect(route("tampil_barista", ['id' => $barista->id]));

@@ -15,8 +15,10 @@ class CetakController extends Controller
     public function simpan(Request $request)
     {
         $cetak = new cetak();
+        $cetak->tanggal = $request->get("tanggal");
+        $cetak->minuman = $request->get("minuman");
         $cetak->nama = $request->get("nama");
-        $cetak->keterangan = $request->get("keterangan");
+        $cetak->qty = $request->get("qty");
         $cetak->save();
 
         return redirect(route("tampil_cetak", ['id' => $cetak->id]));
@@ -43,8 +45,10 @@ class CetakController extends Controller
     public function update(Request $request, $id)
     {
         $cetak = cetak::find($id);
+        $cetak->tanggal = $request->get("tanggal");
+        $cetak->minuman = $request->get("minuman");
         $cetak->nama = $request->get("nama");
-        $cetak->keterangan = $request->get("keterangan");
+        $cetak->qty = $request->get("qty");
         $cetak->save();
 
         return redirect(route("tampil_cetak", ['id' => $cetak->id]));

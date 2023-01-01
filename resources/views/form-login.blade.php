@@ -32,124 +32,111 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | WEB PINANGGIH</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="login/dist/vendor/bootstrap-4.5.3/css/bootstrap.min.css" type="text/css">
-    <!-- Material design icons -->
-    <link rel="stylesheet" href="login/dist/icons/material-design-icons/css/mdi.min.css" type="text/css">
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <!-- Latform styles -->
-    <link rel="stylesheet" href="login/dist/css/latform-style-6.min.css" type="text/css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="template/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="template/assets/img/favicon.png">
+  <title>
+    PINANGGIH | Website
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="template/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="template/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="template/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="template/assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
 </head>
-<body>
+
+<body class="">
 <form action="{{ route("proses_login") }}" method="post">
  @csrf
-<div class="form-shape-wrapper">
-    <div class="form-shape">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
-            <path fill="red" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
-        </svg>
-    </div>
-</div>
-<div class="form-wrapper">
-    <div class="container">
-        <div class="card">
-            <div class="row no-gutters">
-                <div class="col d-none d-lg-flex" style="background: url(login/dist/images/batik-kalimantan-timur.jpg)">
-                    <div class="logo">
-                        <img src="login/dist/images/logo-colorful.png" alt="logo">
-                    </div>
-                    <div>
-                        <h3 class="font-weight-bold">Welcome to myWeb</h3>
-                        <p class="lead my-5">Jika anda belum mempunyai akun, silahkan Register terlebih dahulu</p>
-                        <a href="#" class="btn btn-outline-primary 2btn-lg">Register</a>
-                    </div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1">
-                            <div class="logo d-block d-lg-none text-center text-lg-left">
-                                <img src="../../dist/images/logo-colorful.png" alt="logo">
-                            </div>
-                            <div class="my-5 text-center text-lg-left">
-                                <h3 class="font-weight-bold">Sign In</h3>
-                                <p class="text-muted">Silahkan masukkan username, password dan level anda ...</p>
-                            </div>
-                            <form>
-                                <div class="form-group">
-                                    <div class="form-icon-wrapper">
-                                        <input type="text" name="username" class="form-control" placeholder="Masukkan username" autofocus
-                                               required>
-                                        <i class="form-icon-left mdi mdi-email"></i>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-icon-wrapper">
-                                        <input type="password" name="password" class="form-control" placeholder="Masukkan password"
-                                               required>
-                                        <i class="form-icon-left mdi mdi-lock"></i>
-                                        <a href="#" class="form-icon-right password-show-hide"
-                                           title="Hide or show password">
-                                            <i class="mdi mdi-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-icon-wrapper">
-                                        <select name="level" class="form-control form-control-user" required>
-                                                <option value="">Pilih Level</option>
-                                                <option value="Admin">Admin</option>
-                                                <option value="User">User</option>
-                                        </select>
-                                        <i class="form-icon-left mdi mdi-email"></i>
-                                    </div>
-                                </div>
-                                <!-- <p class="text-center mb-4">
-                                    Can't access your account? <a href="password-reset.html">Reset your password now</a>.
-                                </p> -->
-                                <button class="btn btn-primary btn-block mb-4">Sign In</button>
-                            </form>
-                            <div class="text-divider">||</div>
-                            <!-- <div class="social-links justify-content-center">
-                                <a href="#">
-                                    <i class="mdi mdi-google"></i> Google
-                                </a>
-                                <a href="#">
-                                    <i class="mdi mdi-facebook"></i> Facebook
-                                </a>
-                                <a href="#">
-                                    <i class="mdi mdi-github"></i> Github
-                                </a>
-                            </div> -->
-                            <p class="text-center d-block d-lg-none mt-5 mt-lg-0">
-                                Don't have an account?
-                                <a href="sign-up.html">Create a free account</a>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <!-- Navbar -->
+
+  <!-- End Navbar -->
+  <main class="main-content  mt-0">
+    <section class="min-vh-100 mb-8">
+      <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('template/assets/img/curved-images/curved14.jpg');">
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 text-center mx-auto">
+              <h1 class="text-white mb-2 mt-5">Welcome!</h1>
+              <p class="text-lead text-white">Silahkan masukkan Username, Password dan Level anda untuk masuk ke dalam website!</p>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<!-- Jquery -->
-<script src="login/dist/vendor/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="login/dist/vendor/bootstrap-4.5.3/js/bootstrap.min.js"></script>
-<!-- Latform scripts -->
-<script src="login/dist/js/latform.min.js"></script>
+      </div>
+      <div class="container">
+        <div class="row mt-lg-n10 mt-md-n11 mt-n10">
+          <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+            <div class="card z-index-0">
+              <div class="card-header text-center pt-4">
+                
+              <div class="card-body">
+                <form role="form text-left">
+                  <div class="mb-3">
+                    <input type="text" name="username" class="form-control" placeholder="Masukkan Username . . ." aria-label="Name" aria-describedby="email-addon">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password . . ." aria-label="Email" aria-describedby="email-addon">
+                  </div>
+                  <div class="mb-3">
+                        <select name="level" class="form-control form-control-user" required>
+                            <option value="">Pilih Level</option>
+                            <option value="Admin">Admin</option>
+                            <option value="User">User</option>
+                        </select></div>
+                  <div class="text-center">
+                    <button type="submit" class="btn bg-gradient-dark w-100 my-4 mb-2">Login</button>
+                  </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          
+        <div class="row">
+          <div class="col-8 mx-auto text-center mt-1">
+            <p class="mb-0 text-secondary">
+              Copyright © 2022 by PINANGGIH | Website
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+  </main>
+  <!--   Core JS Files   -->
+  <script src="template/assets/js/core/popper.min.js"></script>
+  <script src="template/assets/js/core/bootstrap.min.js"></script>
+  <script src="template/assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="template/assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
 </form>
 </body>
+
 </html>
