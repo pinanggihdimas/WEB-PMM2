@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('kategori', function (Blueprint $table) {
             $table->id();
-            $table->string("kategori_id");
-            $table->string("jenis_minuman");
+            $table->string("nama_kategori");
             $table->string("minuman_id");
             $table->timestamps();
         });
@@ -24,7 +23,7 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
-     *
+     *php
      * @return void
      */
     public function down()

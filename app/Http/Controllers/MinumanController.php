@@ -15,8 +15,10 @@ class MinumanController extends Controller
     public function simpan(Request $request)
     {
         $minuman = new minuman();
-        $minuman->nama = $request->get("nama");
-        $minuman->keterangan = $request->get("keterangan");
+        $minuman->minuman = $request->get("minuman");
+        $minuman->gambar = $request->get("gambar");
+        $minuman->deskripsi = $request->get("deskripsi");
+        $minuman->harga = $request->get("harga");
         $minuman->save();
 
         return redirect(route("tampil_minuman", ['id' => $minuman->id]));
